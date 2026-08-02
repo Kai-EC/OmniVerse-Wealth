@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "max": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/bistin/max-mcp-server.git",
+        "max-mcp"
+      ],
+      "env": {
+        "MAX_API_KEY": "${env:MAX_API_KEY}",
+        "MAX_API_SECRET": "${env:MAX_API_SECRET}",
+        "MAX_ENABLE_TRADING": "0"
+      },
+      "disabled": false
+    }
+  }
+}
